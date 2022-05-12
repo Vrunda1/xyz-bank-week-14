@@ -81,4 +81,10 @@ public class AccountPage extends Utility {
         Reporter.log("getting Transaction Successful Message from "+transactionSuccessText.toString()+"<br>");
         return getTextFromElement(transactionSuccessText);
     }
+    @FindBy(xpath = "//button[contains(text(),'Logout')]")
+    WebElement yourNameText;
+
+    public String verifyYourNameText(){
+        return getTextFromElement(yourNameText);
+    }
 }

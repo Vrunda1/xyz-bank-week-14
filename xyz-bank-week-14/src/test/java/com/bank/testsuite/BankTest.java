@@ -68,6 +68,7 @@ public class BankTest extends TestBase {
             softAssert.assertEquals(openAccountPage.verifyAlertText().substring(0, 28), "Account created successfully");
             acceptAlert();
         }catch (Exception e) {
+            //exception handling
         }
         softAssert.assertAll();
     }
@@ -80,6 +81,7 @@ public class BankTest extends TestBase {
         customerPage.clickOnLoginButton();
        SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(accountPage.verifyLogOutButton(),"Logout","");
+       softAssert.assertEquals(accountPage.verifyYourNameText(),"Joanna Baily","");
         accountPage.clickOnLogOutButton();
 
 
