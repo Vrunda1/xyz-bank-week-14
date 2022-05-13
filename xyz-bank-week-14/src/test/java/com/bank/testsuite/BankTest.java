@@ -110,7 +110,6 @@ public class BankTest extends TestBase {
       accountPage.clickOnwithdrawDown();
         SoftAssert softAssert = new SoftAssert();
        softAssert.assertEquals(accountPage.verifyWithTransactionSuccessfulMessage(),"Transaction successful","");
-
     }
 }
 

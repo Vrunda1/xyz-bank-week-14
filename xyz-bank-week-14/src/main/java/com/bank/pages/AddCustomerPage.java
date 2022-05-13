@@ -42,7 +42,7 @@ public class AddCustomerPage extends Utility {
 
 
     public String verifyAlertText(){
-     //  Reporter.log("getting alert text from "+getTextFromAlert.toString()+"<br>");
+    //  Reporter.log("getting alert text from "+getTextFromAlert+"<br>");
         return getTextFromAlert();
     }
     @FindBy(xpath = "//body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]")
